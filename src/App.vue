@@ -1,15 +1,21 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  
+  <h1>App.Vue</h1>
+
+  <router-link to="/">홈으로</router-link>
+  <router-link to="/post">post</router-link>
+  <router-view></router-view>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import containerComponent from './components/containerComponent.vue'
+// import postComponent from './components/postComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // containerComponent, postComponent
   }
 }
 </script>
